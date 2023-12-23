@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+
+}
+body{
+    font-family:'Roboto',sans-serif;
+}
+/* header */
+.material-symbols-outlined
+{
+    color: rgb(96, 96, 96)
+}
+
+/*  display:flex  every thing come in one row */
+/* justify-content: space-between   it will space between each div tag  */
+.header
+{
+    display:flex;    
+    justify-content:space-between;
+    align-items: center;
+    height: 70px;
+    padding: 15px; 
+}
+.header_left
+{
+    display: flex;
+    align-items: center;
+}
+.header_left img
+{
+    width: 100px;
+    height: 30%;
+    margin-left:20px;
+}
+ .header_icon i {
+    padding: 0px 7px ;
+    cursor: pointer;
+
+ }
+
+.header_search form
+{
+border: 1px solid grey;
+height: 35px;
+padding: 0px;
+margin: 0px;
+display: flex;
+}
+.header_search button
+{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    border: none;
+    border-radius: 0;
+
+}
+.header_search input
+{
+    width: 700px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+
+}
+
+/* mainbody */
+.mainbody 
+{
+    height: calc(100vh - 70px);
+    display: flex;
+    overflow: hidden;
+}
+.sidebar
+{
+    height:100%;
+    width: 230px;
+    background-color: white;
+    overflow-y: scroll;
+}
+.sidebar_catgories 
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 20px;
+}
+.sidebar_catgory
+{
+    display: flex;
+    align-items: center;
+    padding: 12px  25px;
+}
+.sidebar_catgory span
+{
+    margin-left: 15px;
+}
+.sidebar_catgory:hover
+{
+    background : grey;
+    cursor: pointer;
+}
+.sidebar::-webkit-scrollbar
+{
+    display: none;
+}
+
+hr{
+    height: 1px;
+    background-color: aliceblue;
+    border: none;
+}
+/* videosection */
+.videos
+{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    padding: 15px 25px;
+    border-top: 1px solid #ddd;
+    overflow-y: scroll;
+}
+.videocontainer
+{
+    display: flex;
+    flex-direction: space-around;
+    flex-wrap: wrap;
+}
+.video
+{
+    width: 310px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+
+}
+.videothumbnail
+{
+    width: 100%;
+    height: 170px;
+}
+.videothumbnail img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+}
+.author img{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+.videodetails
+{
+    display: flex;
+    margin-top: 10px;
+}
+
+.title
+{
+    display: flex;
+    flex-direction: column;
+}
+.title h3{
+    color: black;
+    line-height: 18px;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.title a,span
+{
+    text-decoration: none;
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+
+}
+h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: rgb(3,3,3);
+}
+
